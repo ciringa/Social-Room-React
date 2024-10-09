@@ -26,7 +26,7 @@ export function Posts(data:any) {
     
 
     return(
-        <div className="w-1/2 h-36 bg-slate-800 rounded-xl flex flex-row p-6 shadow-slate-900 shadow-sm">
+        <div className="w-1/2 h-36 bg-slate-950 rounded-xl flex flex-row p-6 shadow-slate-900 shadow-sm">
             <div className=" w-2/3">
                 <h1 className=" text-slate-200 text-2xl">{Onwer}</h1>
                 <p className="text-slate-400">{_data.Content}</p>

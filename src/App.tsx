@@ -4,6 +4,8 @@ import { WritePost } from "./components/containers/WriteArea";
 import { SideBar } from "./components/sidebar";
 import './styles/pattern.css';
 import { Login } from "./components/containers/LoginArea";
+import WhoToFollow from "./components/cards/WhoToFollow";
+import Notifications from "./components/cards/Notifications";
 
 
 function App() {
@@ -16,8 +18,16 @@ function App() {
         </div>
           {
             Route=="Home"?(
-              <div className="w-full flex justify-center items-center flex-col">
-                <WritePost></WritePost><PostsArea></PostsArea>
+              <div className="w-full flex justify-center items-center flex-row">
+                <div className="w-3/4 h-screen flex flex-col items-start">
+                  <WritePost></WritePost><PostsArea></PostsArea>
+                </div>
+                <div className="w-1/4 h-screen flex-col gap-y-10 flex justify-start items-center p-8">
+                  <WhoToFollow></WhoToFollow>
+                  <Notifications></Notifications>
+                  <Notifications></Notifications>
+                  <Notifications></Notifications>
+                </div>
               </div>):
               (
                 <div className="w-full flex justify-center items-center flex-col">

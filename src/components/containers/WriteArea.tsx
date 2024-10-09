@@ -17,7 +17,7 @@ export function WritePost() {
 
     return (
         <div className="w-full flex justify-center items-center">
-            <div className="bg-slate-800 w-1/2 h-36 m-10 rounded-2xl flex justify-center items-center shadow-slate-900 shadow-sm">
+            <div className="bg-slate-950 w-1/2 h-36 m-10 rounded-2xl flex justify-center items-center shadow-slate-900 shadow-sm">
                 <input 
                     type="text" 
                     className="w-3/4 bg-slate-900 rounded-2xl h-16 outline-none text-center text-slate-300" 
